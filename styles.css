@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
+    color: #333;
 }
 
 .header {
@@ -104,6 +105,30 @@ body {
     margin-right: auto;
 }
 
-.content h1 {
+.content h1, .content h2 {
+    color: #2e8b57; /* Verde scuro */
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-item {
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #2e8b57; /* Verde scuro */
+}
+
+.project-item h3 {
     margin-top: 0;
+}
+
+.content a {
+    color: #2e8b57; /* Verde scuro */
+}
+
+.content a:hover {
+    text-decoration: underline;
 }
