@@ -10,6 +10,7 @@
     <header class="header">
         <div class="header-inner">
             <a href="#" class="logo">Il Mio Sito</a>
+            <button class="menu-btn" onclick="toggleSidePanel()">☰</button>
             <nav class="nav">
                 <a href="#features">Features</a>
                 <a href="#pricing">Pricing</a>
@@ -18,19 +19,19 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <aside class="side-panel">
-            <ul>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#repositories">Repositories</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#packages">Packages</a></li>
-            </ul>
-        </aside>
-        <main class="content">
-            <h1>Welcome to My Site</h1>
-            <p>This is a sample site with a header and a side panel similar to GitHub.</p>
-        </main>
+    <aside id="side-panel" class="side-panel">
+        <button class="close-btn" onclick="toggleSidePanel()">×</button>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#repositories">Repositories</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#packages">Packages</a></li>
+        </ul>
+    </aside>
+    <div class="content">
+        <h1>Welcome to My Site</h1>
+        <p>This is a sample site with a header and a side panel similar to GitHub.</p>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
