@@ -3,25 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sito con Header e Side Panel</title>
+    <title>Sito in Stile GitHub</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Il Mio Sito</h1>
+    <header class="header">
+        <div class="header-inner">
+            <a href="#" class="logo">Il Mio Sito</a>
+            <nav class="nav">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
     <div class="container">
-        <nav class="side-panel">
+        <aside class="side-panel">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Chi Siamo</a></li>
-                <li><a href="#services">Servizi</a></li>
-                <li><a href="#contact">Contatti</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#repositories">Repositories</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#packages">Packages</a></li>
             </ul>
-        </nav>
+        </aside>
         <main class="content">
-            <h2>Benvenuto!</h2>
-            <p>Questa è la pagina principale del mio sito con un header e un pannello laterale.</p>
+            <h1>Welcome to My Site</h1>
+            <p>This is a sample site with a header and a side panel similar to GitHub.</p>
         </main>
     </div>
 </body>
