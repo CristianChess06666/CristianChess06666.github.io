@@ -27,6 +27,11 @@ body {
     text-decoration: none;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav a {
     color: white;
     text-decoration: none;
